@@ -1,38 +1,318 @@
+/* Global Styles */
 .App {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.logo h2 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  margin-left: 30px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: #888;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 72px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 10px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  letter-spacing: 5px;
+}
+
+.hero p {
+  font-size: 18px;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+/* Section Styles */
+section {
+  padding: 100px 0;
+}
+
+.section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  letter-spacing: 3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Expedition Section */
+.expedition {
+  background-color: #f9f9f9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.expedition p {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  line-height: 1.8;
+}
+
+.expedition-details {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.detail {
+  width: 250px;
+  margin: 20px;
+}
+
+.detail h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+/* Team Section */
+.team-members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.member {
+  width: 250px;
+  margin: 20px;
+}
+
+.member-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 auto 20px;
+  background-image: url('https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.member h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+
+.member p {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Gallery Section */
+.gallery {
+  background-color: #f9f9f9;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.gallery-item {
+  height: 300px;
+  background-color: #ddd;
+  background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Partners Section */
+.partners-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.partner {
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  background-color: #ddd;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #f9f9f9;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 15px;
+  background-color: #333;
   color: white;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-form button:hover {
+  background-color: #555;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .logo {
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation li {
+    margin: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  .expedition-details,
+  .team-members,
+  .partners-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detail,
+  .member,
+  .partner {
+    margin: 10px 0;
   }
 }
