@@ -2,7 +2,7 @@
   "name": "ski-gallery",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://username.github.io/ski-gallery/",
+  "homepage": "http://marcinmoskala.com/ski-expedition",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
