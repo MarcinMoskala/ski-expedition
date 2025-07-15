@@ -39,6 +39,30 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Deployment to GitHub Pages
+
+This project is configured for easy deployment to GitHub Pages. Follow these steps:
+
+1. Update the `homepage` field in `package.json` with your GitHub username:
+   ```
+   "homepage": "https://your-username.github.io/ski-gallery/"
+   ```
+
+2. Push your changes to the `main` branch of your GitHub repository.
+
+3. GitHub Actions will automatically build and deploy your site to GitHub Pages.
+
+4. Your site will be available at the URL specified in the `homepage` field.
+
+### GitHub Pages Configuration
+
+The deployment is handled by a GitHub Actions workflow defined in `.github/workflows/deploy.yml`. This workflow:
+- Runs when you push to the `main` branch
+- Builds your React application
+- Deploys it to GitHub Pages
+
+No additional manual steps are required for deployment.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
