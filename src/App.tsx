@@ -11,7 +11,7 @@ function App() {
         </div>
         <nav className="navigation">
           <ul>
-            <li><a href="#expedition">EXPEDITION</a></li>
+            <li><a href="#activities">ACTIVITÉS</a></li>
             <li><a href="#team">TEAM</a></li>
             <li><a href="#gallery">GALLERY</a></li>
             <li><a href="#partners">PARTNERS</a></li>
@@ -29,26 +29,56 @@ function App() {
           </div>
         </section>
 
-        <section id="expedition" className="expedition">
+        <section id="activities" className="activities">
           <div className="section-content">
-            <h2>THE EXPEDITION</h2>
-            <p>
-              A pioneering ski expedition to the heart of the Karakoram range, 
-              exploring uncharted territories and skiing down some of the most 
-              remote and challenging slopes on the planet.
-            </p>
-            <div className="expedition-details">
-              <div className="detail">
-                <h3>LOCATION</h3>
-                <p>Karakoram Range, Pakistan</p>
+            <h2 className="section-title">LES ACTIVITÉS</h2>
+            <div className="activities-grid">
+              <div className="activity-card">
+                <div className="activity-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1551524559-8af4e6624178?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')" }}>
+                  <div className="activity-overlay">
+                    <h3>SKI DE RANDONNÉE</h3>
+                    <div className="activity-description">
+                      <p>Explorez les pentes vierges et les paysages spectaculaires du Karakoram en ski de randonnée. Nos guides expérimentés vous emmèneront sur les meilleurs itinéraires adaptés à votre niveau.</p>
+                      <a href="#" className="activity-button">DÉCOUVRIR</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="detail">
-                <h3>DURATION</h3>
-                <p>45 Days</p>
+
+              <div className="activity-card">
+                <div className="activity-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1605540436563-5bca919ae766?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')" }}>
+                  <div className="activity-overlay">
+                    <h3>HÉLISKI</h3>
+                    <div className="activity-description">
+                      <p>Vivez l'expérience ultime de ski en accédant aux zones les plus reculées par hélicoptère. Dévalez des pentes immaculées avec des vues à couper le souffle sur les sommets environnants.</p>
+                      <a href="#" className="activity-button">DÉCOUVRIR</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="detail">
-                <h3>ELEVATION</h3>
-                <p>5000-7000m</p>
+
+              <div className="activity-card">
+                <div className="activity-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')" }}>
+                  <div className="activity-overlay">
+                    <h3>ALPINISME</h3>
+                    <div className="activity-description">
+                      <p>Combinez ski et alpinisme pour une aventure complète dans le massif du Karakoram. Escaladez des sommets emblématiques et descendez des couloirs vertigineux.</p>
+                      <a href="#" className="activity-button">DÉCOUVRIR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="activity-card">
+                <div className="activity-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1565992441121-4367c2967103?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')" }}>
+                  <div className="activity-overlay">
+                    <h3>FORMATION AVALANCHE</h3>
+                    <div className="activity-description">
+                      <p>Apprenez les techniques essentielles de sécurité en montagne avec nos formations spécialisées. Maîtrisez l'utilisation du matériel de sécurité et l'évaluation des risques d'avalanche.</p>
+                      <a href="#" className="activity-button">DÉCOUVRIR</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -78,32 +108,6 @@ function App() {
                 <h3>SARAH CHEN</h3>
                 <p>Medical Officer</p>
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="gallery" className="gallery">
-          <div className="section-content">
-            <h2>GALLERY</h2>
-            <div className="gallery-grid">
-              <div className="gallery-item"></div>
-              <div className="gallery-item"></div>
-              <div className="gallery-item"></div>
-              <div className="gallery-item"></div>
-              <div className="gallery-item"></div>
-              <div className="gallery-item"></div>
-            </div>
-          </div>
-        </section>
-
-        <section id="partners" className="partners">
-          <div className="section-content">
-            <h2>OUR PARTNERS</h2>
-            <div className="partners-grid">
-              <div className="partner"></div>
-              <div className="partner"></div>
-              <div className="partner"></div>
-              <div className="partner"></div>
             </div>
           </div>
         </section>
